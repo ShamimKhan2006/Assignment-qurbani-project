@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div >
          <Banner></Banner>
-         {/* <AllAnimalsPage></AllAnimalsPage> */}
+         <AllAnimalsPage></AllAnimalsPage>
     </div>
   );
 }
