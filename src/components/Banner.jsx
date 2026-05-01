@@ -6,7 +6,7 @@ const Banner = () => {
     return (
          <div className=" container mx-auto grid grid-cols-1 md:grid-cols-2 p-6 rounded-2xl   gap-4 bg-[#230D41FF] my-10 text-white shadow-sm border border-black">
         <div className="space-y-3">
-          <h1 className="font-bold text-4xl"> <span className='text-[#e218cb]'>Eid al-Adha</span> Mubarak</h1>
+          <h1 className="font-bold text-4xl"> <span className='text-[#ce20b9]'>Eid al-Adha</span> Mubarak</h1>
            <h2 className="font-semibold w-full">A Time for Sacrifice and Faith</h2>
           <p>
             May this blessed Eid bring peace to your heart And happiness to your
@@ -21,7 +21,7 @@ const Banner = () => {
             family a joyful Eid Eid-ul-Adha Kareem 🌙
           </p>
  
-            <Chip color="accent" className='mr-4'>Get Start</Chip>
+            <Chip color="accent" className='m-4'>Get Start</Chip>
     
           <Chip color="accent">Accent</Chip>
          
