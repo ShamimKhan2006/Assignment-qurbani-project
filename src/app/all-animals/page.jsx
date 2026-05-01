@@ -1,11 +1,11 @@
 import AnimalsCard from '@/components/AnimalsCard';
 import React from 'react';
-
+import animals from '../../../public/data.json'
 
 const AllAnimalsPage = async() => {
-    const res=await fetch("http://localhost:3000/data.json", {next: { revalidate: 10 }})
-    const animals=await res.json()
-    console.log(animals)
+    // const res=await fetch("http://localhost:3000/data.json", {next: { revalidate: 10 }})
+    // const animals=await res.json()
+    // console.log(animals)
   
     return (
           <div>
