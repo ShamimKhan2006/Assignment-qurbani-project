@@ -17,32 +17,32 @@ const AnimalsCard = ({ animal }) => {
   return (
     <div className="my-10 ">
      
-       <div className="card bg-[#230D41FF] shadow-2xs text-white border border-black mx-4">
+       <div className="card bg-[#230D41FF]shadow-2xs text-white border border-black mx-4">
   <figure>
     <Image
       src={image}
       width={300}
       height={300}
-      className="object-fill"
+      className="object-fill rounded-lg"
       alt="all animals photo" />
   </figure>
-  <div className="card-body text-left p-4">
+  <div className="card-body text-left p-2 ">
     <h2 className="card-title">
       {name}
       <div className="badge badge-secondary">{type}</div>
     </h2>
      <div className="flex gap-4">
-         <p>{description}</p>
-     
-    {age}
+         <div>{description}</div>
+        <div>age:{age}</div>
+    
      </div>
     <div className="flex gap-4">
-         <p>{price}</p>
+         <p> taka:{price}</p>
     {location}
     </div>
     <div className="card-actions flex gap-4">
-      <p className="badge badge-outline">{category}</p>
-      <div className="badge badge-outline">{breed}</div>
+      <div className="badge badge-info">{category}</div>
+      <div className="badge badge-dash">{breed}</div>
     </div>
   </div>
 </div>

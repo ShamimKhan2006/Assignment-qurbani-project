@@ -4,9 +4,9 @@ import React from 'react';
 
 const Banner = () => {
     return (
-         <div className=" container mx-auto grid grid-cols-1 md:grid-cols-2 p-6 rounded-2xl   gap-4  bg-[#230D41FF] my-10 text-white shadow-sm border border-black">
+         <div className=" container mx-auto grid grid-cols-1 md:grid-cols-2 p-6 rounded-2xl   gap-4 bg-[#230D41FF] my-10 text-white shadow-sm border border-black">
         <div className="space-y-3">
-          <h1 className="font-bold text-4xl">Eid al-Adha Mubarak</h1>
+          <h1 className="font-bold text-4xl"> <span className='text-[#e218cb]'>Eid al-Adha</span> Mubarak</h1>
            <h2 className="font-semibold w-full">A Time for Sacrifice and Faith</h2>
           <p>
             May this blessed Eid bring peace to your heart And happiness to your

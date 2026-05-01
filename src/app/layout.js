@@ -20,7 +20,9 @@ export default function RootLayout({ children }) {
       lang="en" data-theme="light"
       className={`${out.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#230D41FF]">
+      <body className="min-h-full flex flex-col bg-[#230D41FF]">   
+        {/*  */}
+        {/* */}
         <Navber></Navber>
         <main>
           {children}

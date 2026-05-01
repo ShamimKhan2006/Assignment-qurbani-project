@@ -8,20 +8,20 @@
     "weight": 280,
     "age": 3,
     "location": "Bogura",
-    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural food.",
+    "description": "Healthy deshi cow suitable for Qurbani.",
     "image": "/assets/download (1).jpg",
     "category": "Large Animal"
   },
   {
     "id": 2,
-    "name": "Australian Friesian Cow",
+    "name": "Australian Cow",
     "type": "Cow",
     "breed": "Friesian",
     "price": 180000,
     "weight": 350,
     "age": 4,
     "location": "Rajshahi",
-    "description": "High milk producing cow,",
+    "description": "High milk producing cow and healthy food,",
     "image": "/assets/download (2).jpg",
     "category": "Large Animal"
   },
@@ -35,7 +35,7 @@
     "age": 2,
     "location": "Natore",
     "description": "Popular goat breed in Bangladesh, tasty meat.",
-    "image": "/assets/download.jpg",
+    "image": "/assets/goatt.jpg",
     "category": "Small Animal"
   },
   {
@@ -48,7 +48,7 @@
     "age": 3,
     "location": "Pabna",
     "description": "Large size goat, suitable for breeding and Qurbani.",
-    "image": "/assets/images (1).jpg",
+    "image": "/assets/goat.jpg",
     "category": "Small Animal"
   },
   {
@@ -61,11 +61,11 @@
     "age": 2,
     "location": "Dinajpur",
     "description": "Healthy sheep with good meat and its delicious.",
-    "image": "/assets/images (2).jpg",
+    "image": "/assets/goattt.jpg",
     "category": "Medium Animal"
   },
   {
-    "id": 3,
+    "id": 6,
     "name": "White Fat Buffalo",
     "type": "Buffalo",
     "breed": "Local Breed",
@@ -74,11 +74,11 @@
     "age": 4,
     "location": "Chapai Nawabganj",
     "description": "Big healthy buffalo with good meat quality.",
-    "image": "/images/buffalo1.jpg",
+    "image": "/assets/bafalo.jpg",
     "category": "Buffalo"
   },
   {
-    "id": 4,
+    "id": 7,
     "name": "Brown Farm Cow",
     "type": "Cow",
     "breed": "Hybrid",
@@ -87,7 +87,7 @@
     "age": 3,
     "location": "Dinajpur",
     "description": "Farm-raised healthy cow with premium quality.",
-    "image": "/images/cow2.jpg",
+    "image": "/assets/images (2).jpg",
     "category": "Cow"
   }
 ,

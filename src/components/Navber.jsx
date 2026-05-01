@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Navber = () => {
     return (
          <div>
-        <div className="navbar  bg-[#230D41FF] shadow-sm border border-black text-white">
+        <div className="navbar bg-[#230D41FF] shadow-sm border border-black text-white">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
