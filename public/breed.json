@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Deshi Cow",
+    "origin": "Bangladesh",
+    "price_range": "80,000 - 150,000 BDT"
+  },
+  {
+    "id": 2,
+    "name": "Sahiwal",
+    "origin": "Pakistan",
+    "price_range": "120,000 - 250,000 BDT"
+  },
+  {
+    "id": 3,
+    "name": "Friesian",
+    "origin": "Netherlands",
+    "price_range": "200,000 - 400,000 BDT"
+  },
+  {
+    "id": 4,
+    "name": "Boer Goat",
+    "origin": "South Africa",
+    "price_range": "50,000 - 120,000 BDT"
+  }
+]

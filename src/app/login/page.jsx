@@ -39,7 +39,9 @@ const Loginpage = () => {
     return (
              
        
-         <div className="flex justify-center items-center max-w-[40%] mx-auto border border-black px-4 py-10 m-20 bg-[#64349b] shadow-sm rounded-2xl text-white">
+         <div className="flex justify-center items-center max-w-[40%] mx-auto border border-black px-4 py-10 m-20 bg-[#64349b] shadow-sm rounded-2xl text-white   transition-all duration-300
+  hover:border-green-400 
+  hover:shadow-[0_0_15px_rgba(34,197,94,0.6)]">
             <form onSubmit={onSubmit} className="flex w-96 flex-col gap-4" >
       <TextField
    

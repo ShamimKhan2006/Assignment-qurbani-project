@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+[
+  {
+    "id": 6,
+    "title": "Check Eyes and Nose",
+    "description": "Healthy animals have clear eyes and a clean nose without discharge.",
+    "badge": "Health"
+  },
+  {
+    "id": 7,
+    "title": "Inspect Skin & Fur",
+    "description": "Skin should be smooth and free from parasites, cuts, or infections.",
+    "badge": "Inspection"
+  },
+  {
+    "id": 10,
+    "title": "Check Movement",
+    "description": "Make sure the animal walks properly without limping or discomfort.",
+    "badge": "Behavior"
+  },
+  {
+    "id": 12,
+    "title": "Plan Early Purchase",
+    "description": "Buying early helps you avoid high prices and gives you more options.",
+    "badge": "Planning"
+  }
+]

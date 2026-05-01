@@ -17,7 +17,10 @@ const AnimalsCard = ({ animal }) => {
   return (
     <div className="my-10 ">
      
-       <div className="card bg-[#230D41FF]shadow-2xs text-white border border-black mx-4">
+       <div className="card bg-[#230D41FF]shadow-2xs text-white border border-black mx-4  shadow-md shadow-black/20
+  transition-all duration-300
+  hover:shadow-purple-400/50 scale-105
+">
   <figure>
     <Image
       src={image}
@@ -37,7 +40,7 @@ const AnimalsCard = ({ animal }) => {
     
      </div>
     <div className="flex gap-4">
-         <p> taka:{price}</p>
+         <p>{price} BDT</p>
     {location}
     </div>
     <div className="card-actions flex gap-4">
