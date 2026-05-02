@@ -118,7 +118,7 @@ const RegisterPage = () => {
           <FieldError />
         </TextField>
         <div className="flex gap-2">
-          <Button className='w-full' type="submit">
+          <Button className='w-full' type="button">
             <Check />
             Submit
           </Button>
