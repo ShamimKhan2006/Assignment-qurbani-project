@@ -3,6 +3,7 @@ import "./globals.css";
 import Navber from "@/components/Navber";
 import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
+import Nav from "@/components/Nav";
 
 
 const out= Outfit({
@@ -25,8 +26,9 @@ export default function RootLayout({ children }) {
         {/*  */}
         {/* */}
         <ToastContainer />
-        <Navber></Navber>
-        <main>
+        {/* <Navber></Navber> */}
+        <Nav></Nav>
+        <main className=" max-w-11/12 mx-auto">
           {children}
         </main>
         <Footer></Footer>

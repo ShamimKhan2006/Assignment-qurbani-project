@@ -6,7 +6,7 @@ const Breed = () => {
       <h1 className="mx-auto text-center text-2xl text-white">
         Top Breeds
       </h1>
-      <div className="container mx-auto  grid grid-cols-4 gap-2 my-5 bg-[#230D41FF]">
+      <div className="mx-auto  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 my-5 bg-[#230D41FF]">
         {breeds.map((breed) => (
           <div key={breed.id}>
             <div className="card  bg-[#230D41FF] text-white border border-black p-7 m-4 shadow-sm">

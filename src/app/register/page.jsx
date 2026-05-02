@@ -6,7 +6,7 @@ import {
   Button,
   Description,
   FieldError,
-  form,
+
   Input,
   Label,
   TextField,
@@ -21,29 +21,29 @@ const RegisterPage = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     const name = e.target.name.value;
-    // const image = e.target.image.value;
+     const image = e.target.image.value;
 
-    console.log({ email, password,name });
+    console.log({ email, password,name,image });
 
     const { data, error } = await authClient.signUp.email({
       name,
       email,
       password,
-    //   image,
-      callbackURL: "/",
+       image,
+      
     });
 
-    console.log("data",data ,"error",error)
+    console.log({data ,error})
 
     if (data) {
       return toast.success("Register Succesfull!");
     }
     if (error) {
-      return toast.error("Register Failed !");
+      return toast.error("this account already register !");
     }
   };
   return (
-    <div className=" flex justify-center items-center max-w-[40%] mx-auto border border-black px-4 py-10 m-20 bg-[#64349b] shadow-sm rounded-2xl text-white  transition-all duration-300
+    <div className=" flex justify-center items-center m-10 mx-auto border border-black  w-11/12 lg:m-20 py-20 px-20  bg-[#64349b] shadow-sm rounded-2xl text-white  transition-all duration-300
   hover:border-blue-900 
   hover:shadow-[0_0_15px_rgba(3,197,94,0.6)]">
       <form onSubmit={onSubmit} className="flex flex-col gap-4 ">

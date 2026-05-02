@@ -1,10 +1,14 @@
+ 'use client'
 import React from 'react';
 import Link from 'next/link';
 
 
 import { Button } from '@heroui/react';
 import Image from 'next/image';
+import { authClient } from '@/lib/auth-client';
 const Navber = () => {
+const { data: session } = authClient.useSession();
+const user = session?.user;
     return (
          <div>
         <div className="navbar bg-[#230D41FF] shadow-sm border border-black text-white ">
@@ -27,7 +31,7 @@ const Navber = () => {
      <Image src='/assets/logo.jpg' width={80} height={80} alt='logo' className=' pl-5 rounded-full object-cover'></Image>
   </div>
   <div className="navbar-center hidden lg:flex cursor-pointer ">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="flex gap-4 mr-40">
        <li><Link href={"/"} className='hover: scale-90
    '>Home</Link></li>
       <li>
@@ -39,11 +43,18 @@ const Navber = () => {
       <li><a>Profile</a></li>
     </ul>
   </div>
-  <div className="navbar-end ">
-    <Link href={"/login"}> <Button variant='primary'className="mr-4">Login</Button></Link>
-    <Link href={"/logout"}> <Button variant='danger'>Logout</Button></Link>
+ <div className='flex ml-40 items-center gap-4'>
+       {user?(<div className='flex flex-col'>
+     <div className=''>{user.name}</div>
    
-  </div>
+    <Link href={"/logout"}> <Button variant='danger'>Logout</Button></Link>
+     </div>):
+  ( <div className='ml-110'>
+      <Link href={"/login"}> <Button variant='primary'>Login</Button></Link>
+   </div>
+
+   )}
+   </div>
 </div>
 
       </div>
