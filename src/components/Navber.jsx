@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Navber = () => {
     return (
          <div>
-        <div className="navbar bg-[#230D41FF] shadow-sm border border-black text-white">
+        <div className="navbar bg-[#230D41FF] shadow-sm border border-black text-white ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,9 +26,10 @@ const Navber = () => {
     </div>
      <Image src='/assets/logo.jpg' width={80} height={80} alt='logo' className=' pl-5 rounded-full object-cover'></Image>
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div className="navbar-center hidden lg:flex cursor-pointer ">
     <ul className="menu menu-horizontal px-1">
-       <li><Link href={"/"}>Home</Link></li>
+       <li><Link href={"/"} className='hover: scale-90
+   '>Home</Link></li>
       <li>
         
           <Link href={"/all-animals"}>All animals</Link>

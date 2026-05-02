@@ -1,9 +1,12 @@
+import { Button } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const AnimalsCard = ({ animal }) => {
-  console.log("animal data", animal);
+
   const {
+     id,
      type,
      price,
      name,
@@ -14,7 +17,12 @@ const AnimalsCard = ({ animal }) => {
      breed,
      age,
   } = animal;
+
+
+
   return (
+
+ 
     <div className="my-10 ">
      
        <div className="card bg-[#230D41FF]shadow-2xs text-white border border-black mx-4  shadow-md shadow-black/20
@@ -36,7 +44,7 @@ const AnimalsCard = ({ animal }) => {
     </h2>
      <div className="flex gap-4">
          <div>{description}</div>
-        <div>age:{age}</div>
+        <div>Age:{age}</div>
     
      </div>
     <div className="flex gap-4">
@@ -48,8 +56,11 @@ const AnimalsCard = ({ animal }) => {
       <div className="badge badge-dash">{breed}</div>
     </div>
   </div>
+    <Link href={`/all-animals/${id}`}><Button className='btn w-full text-blue-500 border border-[#621cc4] bg-[#230D41FF]'>See Detsils</Button></Link>
 </div>
     </div>
+  
+   
   );
 };
 

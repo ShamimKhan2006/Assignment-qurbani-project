@@ -4,8 +4,8 @@ import { Chip } from "@heroui/react";
 const TipsPage = () => {
   return (
   <div>
-      <h1 className="mx-auto text-center text-2xl text-white  animate__animated animate__bounce animate__delay-2s">Qurbani Tips and Tricks</h1>
-      <div className="container mx-auto  grid grid-cols-4 gap-2 my-5 bg-[#230D41FF]">
+      <h1 className="mx-auto text-center text-2xl text-white  ">Qurbani Tips and Tricks</h1>
+      <div className="container mx-auto  grid grid-cols-4 gap-2 my-5 bg-[#230D41FF] animate__animated animate__bounce animate__delay-2s">
         
       {tips.map((tip) => (
         <div key={tip.id}>

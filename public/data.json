@@ -10,7 +10,19 @@
     "location": "Bogura",
     "description": "Healthy deshi cow suitable for Qurbani.",
     "image": "/assets/download (1).jpg",
-    "category": "Large Animal"
+    "category": "Large Animal",
+    "details": [
+      "Strong and healthy local deshi cow",
+      "Age is 3 years, perfect for Qurbani",
+      "Approximate weight is 280 kg",
+      "Raised on natural food",
+      "Free from diseases",
+      "Meat quality is very good",
+      "Grown in a rural environment",
+      "Easy to handle",
+      "Good for medium budget buyers",
+      "From Bogura farm area"
+    ]
   },
   {
     "id": 2,
@@ -23,7 +35,19 @@
     "location": "Rajshahi",
     "description": "High milk producing cow and healthy food,",
     "image": "/assets/download (2).jpg",
-    "category": "Large Animal"
+    "category": "Large Animal",
+     "details": [
+      "High quality Friesian breed cow",
+      "Age is 4 years",
+      "Approximate weight is 350 kg",
+      "Produces more meat",
+      "Very active and healthy",
+      "Farm-raised with proper care",
+      "Clean and hygienic environment",
+      "Premium choice for Qurbani",
+      "Available in Rajshahi",
+      "Suitable for higher budget"
+    ]
   },
   {
     "id": 3,
@@ -36,7 +60,19 @@
     "location": "Natore",
     "description": "Popular goat breed in Bangladesh, tasty meat.",
     "image": "/assets/goatt.jpg",
-    "category": "Small Animal"
+    "category": "Small Animal",
+    "details": [
+      "Popular goat breed in Bangladesh",
+      "Age is 2 years",
+      "Approximate weight is 35 kg",
+      "Meat is very tasty",
+      "Good for small family Qurbani",
+      "Easy to maintain",
+      "Strong disease resistance",
+      "Available in Natore",
+      "Best for low budget buyers",
+      "Beautiful black color"
+    ]
   },
   {
     "id": 4,
@@ -49,7 +85,19 @@
     "location": "Pabna",
     "description": "Large size goat, suitable for breeding and Qurbani.",
     "image": "/assets/goat.jpg",
-    "category": "Small Animal"
+    "category": "Small Animal",
+    "details": [
+      "Large size goat",
+      "Age is 3 years",
+      "Approximate weight is 50 kg",
+      "Premium Jamunapari breed",
+      "High meat quantity",
+      "Farm-raised animal",
+      "Suitable for Qurbani",
+      "Tall and attractive look",
+      "Available in Pabna",
+      "Good for medium budget"
+    ]
   },
   {
     "id": 5,
@@ -62,7 +110,19 @@
     "location": "Dinajpur",
     "description": "Healthy sheep with good meat and its delicious.",
     "image": "/assets/goattt.jpg",
-    "category": "Medium Animal"
+    "category": "Medium Animal",
+    "details": [
+      "Local breed sheep",
+      "Age is 2 years",
+      "Approximate weight is 30 kg",
+      "Soft and tasty meat",
+      "Easy to maintain",
+      "Perfect for small families",
+      "Low disease risk",
+      "Available in Dinajpur",
+      "Budget-friendly option",
+      "Raised in rural area"
+    ]
   },
   {
     "id": 6,
@@ -75,7 +135,19 @@
     "location": "Chapai Nawabganj",
     "description": "Big healthy buffalo with good meat quality.",
     "image": "/assets/bafalo.jpg",
-    "category": "Buffalo"
+    "category": "Buffalo",
+     "details": [
+      "Large and strong buffalo",
+      "Age is 4 years",
+      "Approximate weight is 350 kg",
+      "High meat production",
+      "Very healthy condition",
+      "Farm-raised with care",
+      "Suitable for Qurbani",
+      "Available in Chapai Nawabganj",
+      "Good for shared Qurbani",
+      "Very powerful animal"
+    ]
   },
   {
     "id": 7,
@@ -88,7 +160,19 @@
     "location": "Dinajpur",
     "description": "Farm-raised healthy cow with premium quality.",
     "image": "/assets/images (2).jpg",
-    "category": "Cow"
+    "category": "Cow",
+    "details": [
+      "Hybrid breed cow",
+      "Age is 3 years",
+      "Approximate weight is 300 kg",
+      "Farm-raised animal",
+      "Very healthy condition",
+      "Premium meat quality",
+      "Raised in clean environment",
+      "Available in Dinajpur",
+      "Mid to high budget option",
+      "Good for Qurbani"
+    ]
   }
 ,
   {
@@ -102,6 +186,19 @@
     "location": "Chapainawabganj",
     "description": "Strong and বড় সাইজের ষাঁড়, কুরবানির জন্য উপযুক্ত.",
     "image": "/assets/images.jpg",
-    "category": "Large Animal"
+    "category": "Large Animal",
+    "details": [
+      "Large and strong bull",
+      "Age is 5 years",
+      "Approximate weight is 400 kg",
+      "Perfect for Qurbani",
+      "100% local breed",
+      "Very healthy condition",
+      "Strong and active",
+      "Available in Chapainawabganj",
+      "Suitable for high budget",
+      "Produces large amount of meat"
+    ]
   }
+  
 ]
