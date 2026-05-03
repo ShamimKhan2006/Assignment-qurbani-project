@@ -101,7 +101,7 @@ const Loginpage = () => {
      
           <Link href={"/login"}>
             {" "}
-            <Button className="w-full" type="button">
+            <Button className="w-full" type="submit">
               <Check />
               Login
             </Button>
