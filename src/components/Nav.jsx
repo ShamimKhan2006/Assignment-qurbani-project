@@ -1,28 +1,33 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
-import { Button } from "@heroui/react";
+import { Button, Spinner } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Avatar } from "@heroui/react";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Nav = () => {
+  
+
   const { data: session, isPending } = authClient.useSession();
   const user = session?.user;
+ const pathName = usePathname();
+  if (isPending) {
+    return <h1 className="text-center flex justify-center items-center mx-auto"><Spinner></Spinner></h1>
+  }
 
-  if (isPending) return null;
-
-  // 🔥 reusable links
   const navLinks = (
     <>
       <li>
-        <Link href="/">Home</Link>
+        <Link href="/"  className={pathName === "/" ? 'text-[#ce20b9] border-b border-b-[#ce20b9]':""}>Home</Link>
       </li>
       <li>
-        <Link href="/all-animals">All Animals</Link>
+        <Link href="/all-animals"  className={pathName === "/all-animals" ? 'text-[#ce20b9] border-b border-b-[#ce20b9]':""}>All Animals</Link>
       </li>
       <li>
-        <Link href="/profile">Profile</Link>
+        <Link href="/profile"  className={pathName === "/profile" ? 'text-[#ce20b9] border-b   border-b-[#ce20b9]':""}>Profile</Link>
       </li>
     </>
   );
@@ -36,7 +41,7 @@ const Nav = () => {
             ☰
           </div>
 
-          {/* 📱 Mobile menu */}
+
           <ul className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-base-100 rounded-box w-52">
             {navLinks}
           </ul>
@@ -51,19 +56,18 @@ const Nav = () => {
         ></Image>
       </div>
 
-      {/* 🔹 Center (desktop) */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
 
-      {/* 🔹 Right */}
+
       <div className="navbar-end gap-3">
         {user ? (
           <>
-            {/* 👤 Avatar */}
+   
             <div className="flex items-center gap-2">
               <Image
-                src={user.image || Avatar}
+                src={user.image || Avatar}  referrerPolicy="no-referrer"
                 alt="avatar"
                 className="rounded-full border"
                 width={40}
@@ -72,7 +76,7 @@ const Nav = () => {
               <span className="hidden lg:block">{user.name}</span>
             </div>
 
-            {/* 🚪 Logout */}
+
             <Link href="/logout">
               <Button variant="danger" className="mr-4">Logout</Button>
             </Link>

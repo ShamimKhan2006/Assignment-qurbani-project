@@ -24,10 +24,11 @@ const AnimalsCard = ({ animal }) => {
 
  
     <div className="my-10 ">
+      
      
        <div className="card bg-[#230D41FF]shadow-2xs text-white border border-black mx-4  shadow-md shadow-black/20
   transition-all duration-300
-  hover:shadow-purple-400/50 scale-105
+  hover:shadow-purple-400/50 scale-105 animate__animated animate__zoomIn
 ">
   <figure>
     <Image
@@ -37,7 +38,7 @@ const AnimalsCard = ({ animal }) => {
       className="object-fill rounded-lg"
       alt="all animals photo" />
   </figure>
-  <div className="card-body text-left p-2 ">
+  <div className="card-body text-left ">
     <h2 className="card-title">
       {name}
       <div className="badge badge-secondary">{type}</div>

@@ -11,10 +11,11 @@ const AllAnimalsPage = async() => {
           <div>
              <h1 className='text-center text-white my-10 font-bold text-3xl'>This is Animas details</h1>
        <div className='container mx-auto grid grid-cols-1 m-4 md:grid-cols-3 lg:grid-cols-4 gap-4 '>
-              
+               
              
             {
-             animals.map(animal => <AnimalsCard key={animal.id} animal={animal}></AnimalsCard>) 
+
+             animals.map(animal => <AnimalsCard   key={animal.id} animal={animal}></AnimalsCard>) 
                 
             }
             

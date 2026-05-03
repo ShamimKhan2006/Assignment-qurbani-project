@@ -11,14 +11,26 @@ import {
   TextField,
 } from "@heroui/react";
 
+
 import Link from "next/link";
 
 import React from "react";
+import { FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const Loginpage = () => {
+  const handleGoogle = async () => {
+  const googleData= await authClient.signIn.social({
+    provider: "google",
+  });
+ console.log(googleData)
+};
+   
 
   const onSubmit = async (e) => {
+     
+
+
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
@@ -99,13 +111,13 @@ const Loginpage = () => {
         
            <div className="flex  flex-col gap-2">
      
-          <Link href={"/login"}>
+          <Button className="w-full " type="submit">
             {" "}
-            <Button className="w-full" type="submit">
+            <Link className="flex gap-1" href={"/login"}>
               <Check />
               Login
-            </Button>
-          </Link>
+            </Link>
+          </Button>
            </div>
           
       
@@ -113,10 +125,11 @@ const Loginpage = () => {
             <h3>Dont have an Account ..?</h3>
             <Link href={"/register"}>
               {" "}
-              <Button variant="secondary">Register</Button>
+              <button className=" border-b">Register</button>
             </Link>
           </div>
-       
+            <p className="mx-auto">oR</p>
+       <Button onClick={handleGoogle} className='btn bg-transparent text-white'><FaGoogle className="text-blue-500" />Sign in Google</Button>
        </form>
        </div>
   );

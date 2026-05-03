@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import Nav from "@/components/Nav";
 
 
+
 const out= Outfit({
 
   subsets: ["latin"],
@@ -22,13 +23,15 @@ export default function RootLayout({ children }) {
       lang="en" data-theme="light"
       className={`${out.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#230D41FF]">   
-        {/*  */}
-        {/* */}
+      <body className="min-h-full flex flex-col bg-[#230D41FF]">  
+      
+   
         <ToastContainer />
-        {/* <Navber></Navber> */}
+        
+      
         <Nav></Nav>
         <main className=" max-w-11/12 mx-auto">
+    
           {children}
         </main>
         <Footer></Footer>

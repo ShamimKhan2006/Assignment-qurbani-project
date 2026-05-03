@@ -123,7 +123,9 @@ const RegisterPage = () => {
             Submit
           </Button>
         </div>
+      
       </form>
+          
     </div>
   );
 };

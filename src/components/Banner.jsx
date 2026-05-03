@@ -1,12 +1,13 @@
-import { Chip } from '@heroui/react';
+import { Button, Chip } from '@heroui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Banner = () => {
     return (
          <div className=" container mx-auto grid grid-cols-1 md:grid-cols-2 p-6 rounded-2xl   gap-4 bg-[#230D41FF] my-10 text-white shadow-sm border border-black  transition-all duration-300
   hover:border-purple-950
-  hover:shadow-[0_0_15px_rgba(34,197,94,0.6)]   animate__animated animate__bounce animate__repeat-2 ">
+  hover:shadow-[0_0_15px_rgba(34,197,94,0.6)]   animate__animated animate__zoomIn ">
         <div className="space-y-3">
           <h1 className="font-bold text-4xl"> <span className='text-[#ce20b9]'>Eid al-Adha</span> Mubarak</h1>
            <h2 className="font-semibold w-full">A Time for Sacrifice and Faith</h2>
@@ -23,9 +24,9 @@ const Banner = () => {
             family a joyful Eid Eid-ul-Adha Kareem 🌙
           </p>
  
-            <Chip color="accent" className='m-4'>Get Start</Chip>
+            <Button variant='secondary' className='mt-2 text-[15px] p-2'><Link href={"/all-animals"}>Browers All animals</Link></Button>
     
-          <Chip color="accent">Accent</Chip>
+          
          
         </div>
 
