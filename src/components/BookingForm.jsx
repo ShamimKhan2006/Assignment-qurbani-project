@@ -39,15 +39,17 @@ const BookingForm = () => {
 
   return (
     <div>
-      <h1 className="font-semibold text-[#ce20b9]  mr-15 text-2xl text-center mt-10 pt-15">
-        Booking details
-      </h1>
+     
       <div
-        className=" flex justify-center items-center m-30 mx-auto border border-black  w-8/12 lg:m-10 py-10 px-10 shadow-sm rounded-2xl text-white  transition-all duration-300
+        className=" flex justify-center items-center  mx-auto border border-black w-8/12 lg:m-10  py-10 px-10 shadow-sm rounded-2xl text-white  transition-all duration-300
   hover:border-blue-900 
   hover:shadow-[0_0_15px_rgba(3,197,94,0.6)]"
+         
       >
         <form onSubmit={onSubmit} className="flex flex-col gap-4 ">
+           <h1 className="font-semibold text-[#ce20b9]   text-2xl text-center ">
+        Booking details
+      </h1>
           <TextField isRequired type="text">
             <Label className=" text-white">Name</Label>
             <Input name="name" placeholder="Enter Your Name" />
