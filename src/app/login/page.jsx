@@ -53,7 +53,7 @@ const Loginpage = () => {
       return toast.success("Login Succesfull!");
     }
     if (error) {
-      return toast.error(   error.message ||"Login Failed !");
+      return toast.error(error.message ||"Login Failed !");
     }
 
      

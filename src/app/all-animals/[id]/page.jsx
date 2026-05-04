@@ -12,7 +12,7 @@ const AnimalsDetailsPage = async ({ params }) => {
   const {
     details,
     category,
-    image,
+
     description,
     location,
     age,
